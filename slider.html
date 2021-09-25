@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>slider</title>
+  </head>
+  <!--on load start at the first -->
+  <body onload="start()">
+    <!-- slider wraper -->
+    <div class="slider-wraper">
+      <!-- tag img for slider -->
+      <img src="images/1.jpg" alt="" class="img" />
+      <!-- arow icons -->
+      <i class="fas fa-angle-left" onclick="left()" onmouseout="start()"></i>
+      <i class="fas fa-angle-right" onclick="right()" onmouseout="start()"></i>
+    </div>
+    <!-- wraper circles -->
+    <div class="wraper-circles">
+      <!-- each circle -->
+      <i class="fas fa-circle one color-black" onclick="one()"></i>
+      <!-- each circle -->
+      <i class="fas fa-circle two" onclick="two()"></i>
+      <!-- each circle -->
+      <i class="fas fa-circle three" onclick="three()"></i>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

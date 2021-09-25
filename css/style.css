@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* wraper slider */
+.slider-wraper {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* style icons arow */
+.slider-wraper i {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  cursor: pointer;
+  transform: 0.5s;
+}
+.slider-wraper i:hover {
+  opacity: 0.5;
+}
+/* arow left  style*/
+.slider-wraper i[class*="fas fa-angle-left"] {
+  top: 50%;
+  left: 0%;
+  transform: translate(100%, -50%);
+}
+
+.slider-wraper i[class*="fas fa-angle-right"] {
+  top: 50%;
+  right: 0%;
+  transform: translate(-100%, -50%);
+}
+/* tag image */
+img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid silver;
+  border-radius: 3%;
+}
+/* body */
+body {
+  background-color: #3333;
+}
+/* wraper circle */
+.wraper-circles {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(-50%);
+}
+/* each circle */
+.fa-circle {
+  font-size: 12px;
+  cursor: pointer;
+  color: #3333;
+  transition: 0.5s;
+  position: relative;
+}
+/* a class for color :black */
+.color-black {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* a circle around the circles */
+.fa-circle::after {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  border: 2px solid tomato;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  content: "";
+  color: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
